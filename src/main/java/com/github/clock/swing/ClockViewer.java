@@ -117,6 +117,7 @@ public class ClockViewer extends JComponent{
         }
 
         g2.translate(center.getX(), center.getY());
+        g2.setColor(Color.decode(args.getShortHandColor()));
         drawHand(g2, clock.getSecond(), length * 0.8);
 
         g2.setStroke(new BasicStroke(2));
